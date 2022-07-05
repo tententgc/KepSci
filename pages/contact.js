@@ -9,7 +9,7 @@ const Contact = () => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <main>
+            <main className={styles.main}>
                 <h1>Contact Page</h1>
             </main>
         </div>
