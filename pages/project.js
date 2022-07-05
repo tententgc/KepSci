@@ -13,7 +13,9 @@ function Project() {
         const responseData = await response.json()
         displayData = responseData.map(function (todo) {
             return (
-                <p key={todo.id}>{todo.title}</p>
+                <>
+                <p key={todo.id}>{todo.title} </p>
+                </>
             )
         })
         setshowPosts(displayData)
