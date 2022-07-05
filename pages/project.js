@@ -51,7 +51,9 @@ const Project = () => {
             </Head>
             <main className={styles.main}>
                 <h1>Project List</h1>
+            
                 <CustomTable /> 
+
             </main>
     </div>
     )

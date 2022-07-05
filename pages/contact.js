@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Home | KepSci</title>
+                <title>Contact | KepSci</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 

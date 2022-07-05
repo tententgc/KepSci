@@ -13,15 +13,15 @@ const CustomTable = () =>{
 
     const columns = [ 
       {
-        name: <h2>Picture</h2>, 
+        name: <h2>Profile</h2>, 
         selector : row => <img src={row.flag} width={50} height={50}/>
         },
       {
         name: <h2>Project Name</h2>, 
-        selector: row => row.name
+        selector: row => <a href="https://www.google.com/">{row.name}</a>
       }, 
       { 
-        name  : <h2>Dowload</h2>, 
+        name: <h2>Download</h2>, 
         selector : row => row.capital
       }, 
     ]
@@ -30,7 +30,7 @@ const CustomTable = () =>{
     },[])
     return(
         <div>  
-          <DataTable columns={columns} data={countries} />
+          <DataTable  columns={columns} data={countries} pagination fixedHeader/>
         </div>
     )
 }

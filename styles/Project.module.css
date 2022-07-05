@@ -13,7 +13,6 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-
 .main {
     min-height: 100vh;
     padding: 4rem 0;
@@ -136,3 +135,4 @@
         flex-direction: column;
     }
 }
+
