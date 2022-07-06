@@ -23,6 +23,23 @@
     align-items: center;
 }
 
+.table{ 
+    min-height: 100vh;
+    padding: 4rem 0;
+    margin : 0 auto; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table a{ 
+    font-size: 1rem;
+}
+.table div{ 
+    font-size: 1rem; 
+}
+
 .main a
 {
     padding : 1rem 0;  

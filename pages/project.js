@@ -49,11 +49,8 @@ const Project = () => {
                 <title>Project |  KepSci</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <main className={styles.main}>
-                <h1>Project List</h1>
-            
+            <main className= {styles.table}>
                 <CustomTable /> 
-
             </main>
     </div>
     )

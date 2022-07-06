@@ -1,6 +1,7 @@
 import React, { useEffect , useState } from 'react'
 
 import axios from 'axios'
+/* Importing the DataTable component from the react-data-table-component library. */
 import DataTable from 'react-data-table-component'
 
 const CustomTable = () =>{ 
@@ -14,25 +15,33 @@ const CustomTable = () =>{
     const columns = [ 
       {
         name: <h2>Profile</h2>, 
-        selector : row => <img src={row.flag} width={50} height={50}/>
+        id : "name",
+        selector : row => <img src={row.flag} width={50} height={50}/>,
         },
       {
         name: <h2>Project Name</h2>, 
-        selector: row => <a href="https://www.google.com/">{row.name}</a>
+        id : "projectName", 
+        selector: row => <a href="https://www.google.com/">{row.name}</a>,
       }, 
       { 
         name: <h2>Download</h2>, 
+        id : "download", 
         selector : row => row.capital
       }, 
     ]
     useEffect(() => { 
       getCountries(); 
     },[])
+
     return(
-        <div>  
-          <DataTable  columns={columns} data={countries} pagination fixedHeader/>
-        </div>
+        <DataTable 
+        columns={columns} 
+        data={countries} 
+        pagination
+        fixedHeader
+        // title="Project List" 
+        />
     )
 }
-
 export default CustomTable
+
