@@ -1,7 +1,6 @@
 import React, { useEffect , useState } from 'react'
 
 import axios from 'axios'
-/* Importing the DataTable component from the react-data-table-component library. */
 import DataTable from 'react-data-table-component'
 
 const CustomTable = () =>{ 
