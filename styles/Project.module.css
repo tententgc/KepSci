@@ -38,11 +38,15 @@
 }
 .table a{ 
     font-size: 1rem;
+    font-family: "Sukhumvit Set","Anuphan",sans-serif;
 }
 .table div{ 
     font-size: 1rem; 
 }
 
+.button{
+     font-size: 2rem; 
+}
 .main a
 {
     padding : 1rem 0;  
