@@ -13,9 +13,10 @@ import SaveIcon from '@mui/icons-material/Save';
 const useStyles = makeStyles({ 
   btn:{ 
     backgroundColor: '#00bcd4',
-    fontSize: '1.5rem',
+    fontSize: '1.5rem'
   }
 })
+
 const CustomTable = () =>{ 
     const [countries, setCountries] = useState([]);
 
@@ -59,10 +60,10 @@ const CustomTable = () =>{
       }, 
     ]
 
-    useEffect(() => { 
+{    useEffect(() => { 
       getCountries(); 
     },[])
-
+}
     return(
         <DataTable 
         columns={columns} 
