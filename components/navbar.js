@@ -7,13 +7,17 @@ function MobileNav({open, setOpen}) {
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
                 <a className="text-xl font-semibold" href="/">LOGO</a>
             </div>
-            <div className="flex flex-col ml-4">
-                <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
-                    About
-                </a>
-                <a className="text-xl font-normal my-4" href="/contact" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
-                    Contact
-                </a>
+            <div className="flex flex-col pt-10">
+                <Link href="/">
+                    <a className="text-xl font-normal mx-16 py-2" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                        หน้าแรก
+                    </a>
+                </Link>
+                <Link href="/login">
+                    <a className="text-xl font-normal mx-16 py-2" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                        Login
+                    </a>
+                </Link>
             </div>  
         </div>
     )
