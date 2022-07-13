@@ -25,7 +25,7 @@ export default function Home() {
             </Link>
           </div>
           <button className='transition duration-75 block px-3 py-2 w-full mb-3 rounded-md bg-green-500 text-white hover:bg-green-600'>Register</button>
-          <hr></hr>
+          <p className='text-center text-gray-500'>⎯⎯⎯⎯⎯⎯  Or  ⎯⎯⎯⎯⎯⎯</p>
         </form>
       </div>
     </Layout>
