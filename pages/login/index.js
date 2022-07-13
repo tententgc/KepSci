@@ -1,4 +1,5 @@
 import Layout from '/components/layouts'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,7 +15,12 @@ export default function Home() {
             <span className="block font-medium text-slate-700">Password</span>
             <input type="password"  className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm"/>
           </div>
-          <button className='block px-3 py-2 w-full mb-3 rounded-md bg-green-500 text-white hover:bg-green-600'>Login</button>
+          <div className='input-group mb-2'>
+            <Link href="/register">
+              <a className='transition duration-75 mb-5 text-blue-500 hover:text-blue-700'>Don't have an account?</a>
+            </Link>
+          </div>
+          <button className='transition duration-75 block px-3 py-2 w-full mb-3 rounded-md bg-green-500 text-white hover:bg-green-600'>Login</button>
           <hr></hr>
         </form>
       </div>

@@ -5,7 +5,7 @@ const Layout = (props) => (
     <div>
         <Header />
         <Navbar />
-        <div class="main md:pt- lg:pt-16">
+        <div className="main pt-10 px-4 lg:pt-16">
             <div className="md:container md:mx-auto">
                 {props.children}
             </div>
