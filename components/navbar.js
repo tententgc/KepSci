@@ -5,7 +5,7 @@ function MobileNav({open, setOpen}) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <a className="text-xl font-semibold" href="/">LOGO</a>
+                <Link className="text-xl font-semibold" href="/">LOGO</Link>
             </div>
             <div className="flex flex-col pt-10">
                 <Link href="/">
@@ -46,8 +46,16 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden md:flex">
+                    <Link href="/">
+                        <a className="text-l font-normal mx-5 py-2"> Home </a> 
+                    </Link>
+                    <Link href="/project">
+                        <a className="text-l font-normal mx-5 py-2"> Project </a> 
+                    </Link>
                     <Link href="/login">
-                        <a className="mx-4">Login</a>
+                        <button type="button" 
+                            className="mx-5 text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Login</button>
+                        {/* <a className="text-l font-normal mx-5 py-2">Login</a> */}
                     </Link>
                 </div>
             </div>
