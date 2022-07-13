@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <Layout>
-      <div className='login-card mx-auto'>
+      <div className='login-card mx-auto drop-shadow-md'>
         <p className='text-center text-2xl font-semibold mb-3'>SIGN IN</p>
         <form>
           <div className='input-group mb-3'>
