@@ -24,7 +24,7 @@ export default function Home() {
               <a className='transition duration-75 mb-5 text-blue-500 hover:text-blue-700'>Already have an account?</a>
             </Link>
           </div>
-          <button className='transition duration-75 block px-3 py-2 w-full mb-3 rounded-md bg-green-500 text-white hover:bg-green-600'>Register</button>
+          <button className='transition duration-75 block px-3 py-2 w-full mb-3 rounded-md bg-blue-500 text-white hover:bg-blue-600'>Register</button>
           <p className='text-center text-gray-500'>⎯⎯⎯⎯⎯⎯  Or  ⎯⎯⎯⎯⎯⎯</p>
         </form>
       </div>
