@@ -32,7 +32,7 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false)
     return (
-        <nav className="flex filter  border-gray-200  bg-white px-3 py-3 h-19 items-center">
+        <nav className="flex filter  border-gray-200  bg-white px-10 py-3 h-19 items-center">
             <MobileNav open={open} setOpen={setOpen}/>
             <div className="w-3/12 flex items-center">
                 <Link href="/">

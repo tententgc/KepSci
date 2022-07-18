@@ -1,4 +1,5 @@
 import '/styles/globals.css'
+import style_home from '/styles/home.css'
 import 'tailwindcss/tailwind.css';
 import React from 'react'
 import Head from 'next/head'
