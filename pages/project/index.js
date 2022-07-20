@@ -10,11 +10,11 @@ export default function Project() {
           <input type="text" className="mt-1 block w-full px-4 py-2 bg-white border border-slate-300 rounded-md text-sm rounded-2xl" placeholder='Search'/>
         </div>
         <div className='section'>
-          <div class="grid grid-cols-5 gap-4">
-            <div class="">
+          <div className="grid grid-cols-5 gap-4">
+            <div className="">
               
             </div>
-            <div class="col-span-4">
+            <div className="col-span-4">
               <Link href="/">
                 <a className='text-blue-700 font-semibold text-lg hover:text-blue-600'>Header</a>
               </Link>
