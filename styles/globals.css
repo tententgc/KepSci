@@ -17,14 +17,15 @@ a {
 }
 
 .main{
-  height: calc(100vh - 8vh);
+  min-height: calc(100vh - 8vh);
   background-color: #edf1f5;
 }
 
 .main-2{
-  height: calc(61vh - 1px);
+  min-height: calc(61vh - 1px);
   background-color: #edf1f5;
 }
+
 .login-card{
   background-color: #fff;
   max-width: 55vh;
