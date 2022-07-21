@@ -15,6 +15,7 @@ export default function Project() {
               <a className='text-blue-700 font-semibold text-lg hover:text-blue-500'>Coronavirus Drug Discovery</a>
             </Link>
             <p className='text-gray-500'>Coronavirus Drug Discovery: SARS-CoV-2 (Covid 19) Prevention, Diagnosis, and Treatment presents comprehensive information on antiviral drug discovery from medicinal plants, animals ... </p>
+            <p className='text-gray-500'><span className='font-semibold'>Public by : </span>Username</p>
           </div>
           <div className='card p-3 mb-3 border-b-2 border-b-gray-300'>
             <Link href="/project/0973">
