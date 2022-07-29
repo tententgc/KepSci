@@ -19,11 +19,6 @@ a {
   background-color: #edf1f5;
 }
 
-.main-2{
-  min-height: calc(61vh - 1px);
-  background-color: #edf1f5;
-}
-
 .login-card{
   background-color: #fff;
   max-width: 55vh;
