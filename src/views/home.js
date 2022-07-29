@@ -10,6 +10,7 @@ import OutlineBlackButton from '../components/outline-black-button'
 import ListItem from '../components/list-item'
 import Footer from '../components/footer'
 import './home.css'
+import HeaderFull from '../components/header-full' 
 
 const Home = (props) => {
   return (
@@ -18,7 +19,7 @@ const Home = (props) => {
         <title>KepSci</title>
         <meta property="og:title" content="Soft UI Pro" />
       </Helmet>
-      <Header></Header>
+      <HeaderFull></HeaderFull>
 
     </div>
   )
