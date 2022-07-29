@@ -1,6 +1,6 @@
 .Banner{
-    background-image: url('../images/bg.jpg');
-    background-position: center top; /* Center the image */
+    background-image: url('../images/bg.png');
+    background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }

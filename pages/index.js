@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className={styles.Banner}>
-        <div className='py-20'>
+        <div className='py-28'>
           <p className='text-center mb-3 text-3xl md:text-4xl font-semibold'>ฐานข้อมูลวิทยานิพนธ์</p>
           <p className='text-center text-lg'>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
         </div>
