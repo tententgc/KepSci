@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <nav className="navbar bg-zinc-700">
+        <nav className="navbar bg-gray-600 shadow shadow-black">
             <div className="container py-3 mx-auto sm:flex">
                 <button className="navbar-toggler sm:hidden rounded-md px-3 py-1 border border-solid mb-2" type="button">
                     <FontAwesomeIcon icon={faBars} size="lg"/>
