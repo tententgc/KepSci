@@ -1,5 +1,6 @@
 import '/styles/globals.css'
 import '/styles/navbar.css'
+import '/styles/footer.css'
 import 'tailwindcss/tailwind.css';
 import Head from 'next/head'
 

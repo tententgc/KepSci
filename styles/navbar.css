@@ -1,13 +1,19 @@
-
+.navbar{
+    background-color: #4f4e4e;
+    color: #fff;
+}
 .nav-item{
     padding: 10px 15px;
 }
 .navbar-toggler{
-    color: rgb(101, 101, 101);
+    color: rgb(216, 216, 216);
 }
 .nav-link{
     transition: color 0.2s;
 }
 .nav-link:hover{
-    color: rgb(120, 120, 120);
+    color: rgb(193, 193, 193);
+}
+.navbar-nav{
+    transition: 1s;
 }
