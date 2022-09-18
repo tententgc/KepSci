@@ -14,8 +14,8 @@ export default function Navbar() {
     return (
         <>
             <div className="bar">
-                <div className="container py-2 mx-auto md:flex md:px-5">
-                    <div class="ml-auto">
+                <div className="container py-2 mx-auto flex md:px-5">
+                    <div class="bar-item ml-auto">
                         <Link href="/login">
                             <a className="bar-link">เข้าสู่ระบบ</a>
                         </Link>
@@ -27,10 +27,14 @@ export default function Navbar() {
                 <div className="container py-3 mx-auto md:flex md:px-5">
                     <div className="grid grid-flow-col auto-cols-2">
                         <div className="col-span-4 flex items-center">
-                            <Image
-                                src={logo}
-                                alt="logo"
-                            />
+                            <Link href="/">
+                                <a>
+                                    <Image
+                                        src={logo}
+                                        alt="logo"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className="flex items-center">
                             <button className="navbar-toggler md:hidden rounded-md px-3 py-1" type="button" onClick={active}>
@@ -38,8 +42,8 @@ export default function Navbar() {
                             </button>
                         </div>
                     </div>
-                    <div className="navbar-item ml-auto">
-                        <ul className={"navbar-nav md:flex " + (isActive ?  "flex-col" : "hidden")}>
+                    <div className={"navbar-item ml-auto md:flex md:items-center " + (isActive ?  "flex-col" : "hidden")}>
+                        <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link href="/">
                                     <a className="nav-link">หน้าแรก</a>

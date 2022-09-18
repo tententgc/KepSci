@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className={styles.Banner}>
-        <div className='py-32'>
+        <div className='py-32 px-3'>
           <p className='text-center mb-3 text-white text-3xl md:text-4xl font-semibold'>ฐานข้อมูลงานวิจัย และวิทยานิพนธ์</p>
           <p className='text-center text-xl text-white'>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
         </div>
