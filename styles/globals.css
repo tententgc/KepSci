@@ -15,7 +15,7 @@ a {
 }
 
 .main{
-  min-height: calc(92vh - 3px);
+  min-height: calc(81vh + 1px);
   background-color: #edf1f5;
 }
 
