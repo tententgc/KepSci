@@ -1,4 +1,5 @@
 import Navbar from './nav'
+import Footer from './footer'
 
 const Layout = (props) => (
     <div>
@@ -8,6 +9,7 @@ const Layout = (props) => (
                 {props.children}
             </div>
         </div>
+        <Footer />
     </div>
 )
   
