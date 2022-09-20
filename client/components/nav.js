@@ -12,17 +12,7 @@ export default function Navbar() {
         setIsActive(current => !current);
     }
     return (
-        <>
-            <div className="bar">
-                <div className="container py-2 mx-auto flex md:px-5">
-                    <div class="bar-item ml-auto">
-                        <Link href="/login">
-                            <a className="bar-link">เข้าสู่ระบบ</a>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-            
+        <>       
             <nav className="navbar sticky top-0">
                 <div className="container py-3 mx-auto md:flex md:px-5">
                     <div className="grid grid-flow-col auto-cols-2">
@@ -43,10 +33,15 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className={"navbar-item ml-auto md:flex md:items-center " + (isActive ?  "flex-col" : "hidden")}>
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav md:flex">
                             <li className="nav-item">
                                 <Link href="/">
                                     <a className="nav-link">หน้าแรก</a>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href="/login">
+                                    <a className="nav-link">เข้าสู่ระบบ</a>
                                 </Link>
                             </li>
                         </ul>
