@@ -1,4 +1,4 @@
-import styles from "/styles/footer.module.css";
+import styles from "../styles/footer.module.css";
 export default function Navbar() {
     return(
         <div className={styles.footer+" py-2 px-4"}>
