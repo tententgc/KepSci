@@ -11,9 +11,13 @@ export default function Home() {
                         <span className="block font-medium text-slate-700">ชื่องานวิจัยหรือวิทยานิพนธ์ หรือคำที่เกี่ยวข้อง</span>
                         <input type="text"  className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm"/>
                     </div>
+                    <div className='input-group mb-3'>
+                        <span className="block font-medium text-slate-700">รายชื่อผู้จัดทำโครงงาน</span>
+                        <input type="text" className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm" />
+                    </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-4">
                         <div className='input-group mb-3'>
-                            <span className="block font-medium text-slate-700">ชื่อคนเขียน</span>
+                            <span className="block font-medium text-slate-700">ประเภทของโครงงาน</span>
                             <input type="text"  className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm"/>
                         </div>
                         <div className='input-group mb-3'>
