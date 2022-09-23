@@ -1,0 +1,10 @@
+.Banner{
+    background-image: url('../images/bg.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    text-shadow: 0px 0px 15px rgba(0,0,0,1);
+}
+.listcard{
+    background-color: #fff;
+}
