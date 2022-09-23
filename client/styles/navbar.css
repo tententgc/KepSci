@@ -3,19 +3,6 @@
     color: #fff;
     z-index: 50;
 }
-.bar{
-    background-color: #ffd110;
-    color: #fff;
-}
-.bar-link{
-    color: rgb(138, 138, 138);
-    transition: color 0.2s;
-    font-size: 14px;
-    padding: 0px 15px;
-}
-.bar-link:hover{
-    color: rgb(56, 56, 56);
-}
 .nav-item{
     padding: 10px 15px;
 }
