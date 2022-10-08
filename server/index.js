@@ -45,3 +45,15 @@ app.listen("5001", () =>
     console.log(`server started on port 5001`); 
 })
 
+async function connect() { 
+    if (mongoose.connection.readyState >= 1) { 
+        return; 
+    }
+    return mongoose.connect(process.env.MONGO_URL, 
+    { 
+        useNewUrlParser: true, 
+        useUnifiedTopology: true, 
+    }); 
+}
+
+module.exports = connect; 
