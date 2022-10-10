@@ -1,34 +1,40 @@
 import Layout from '/components/layouts'
 import Link from 'next/link'
+import React from 'react'
+import { providers,getSession} from 'next-auth/react'
 
+const Login = ({providers,session}) => { 
+    console.log({providers,session})
+        
+    if(session) return null; 
 
-const getProviders = async () => { 
-    const providers = await fetch('/api/auth/login')
-    return await providers.json()
-}
-
-export default function Home({ providers }) {
     return (
-        <Layout>
+        <div className='d-flex justify-content-center align-items-center'> 
             <div className='login-card mx-auto drop-shadow-md'>
-                <p className='text-center text-2xl font-semibold mb-3'>เข้าสู่ระบบ</p>
-                <form>
-                    <div className='input-group mb-3'>
-                        <span className="block font-medium text-slate-700">ชื่อผู้ใช้งาน</span>
-                        <input type="text" className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm" />
+                <p className='text-center text-2xl font-semibold mb-3'>Login</p>
+                <div className='flex flex-col gap-3'>
+                    {Object.values(providers).map((provider) => {
+                        return (
+                            <div key={provider.name}>
+                                <button className='btn btn-primary' onClick={() => signIn(provider.id)}>
+                                    Sign in with {provider.name}
+                                </button>
+                            </div>
+                        )
+                    })}
                     </div>
-                    <div className='input-group mb-3'>
-                        <span className="block font-medium text-slate-700">รหัสผ่าน</span>
-                        <input type="password" className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm" />
                     </div>
-                    <div className='input-group mb-2'>
-                        <Link href="/register">
-                            <a className='transition duration-75 mb-5 text-blue-500 hover:text-blue-700'>ยังไม่มีบัญชี?</a>
-                        </Link>
-                    </div>
-                    <button className='transition duration-75 block px-3 py-2 w-full mb-3 rounded-md bg-blue-500 text-white hover:bg-blue-600'>เข้าสู่ระบบ</button>
-                </form>
-            </div>
-        </Layout>
+                    
+        </div>
     )
 }
+
+Login.getInitialProps = async (context) => { 
+    return { 
+        providers: await providers(context), 
+        session : await getSession(context) 
+    }
+}
+
+
+export default Login ;
