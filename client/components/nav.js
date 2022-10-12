@@ -40,7 +40,7 @@ export default function Navbar() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/login">
+                                <Link href="/Signin">
                                     <a className="nav-link">เข้าสู่ระบบ</a>
                                 </Link>
                             </li>
