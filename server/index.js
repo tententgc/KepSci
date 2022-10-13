@@ -7,10 +7,10 @@ const userRoute = require('./routes/users');
 const postRoute = require('./routes/posts');
 const categoryRoute = require('./routes/categories');
 const multer = require('multer'); 
-
-
+const cors = require('cors'); 
 
 dotenv.config();
+app.use(cors());
 app.use(express.json()); 
 
 mongoose.connect(process.env.MONGO_URL, 
@@ -45,3 +45,15 @@ app.listen("5001", () =>
     console.log(`server started on port 5001`); 
 })
 
+async function connect() { 
+    if (mongoose.connection.readyState >= 1) { 
+        return; 
+    }
+    return mongoose.connect(process.env.MONGO_URL, 
+    { 
+        useNewUrlParser: true, 
+        useUnifiedTopology: true, 
+    }); 
+}
+
+module.exports = connect; 
