@@ -1,4 +1,3 @@
-
 import bcrypt from 'bcryptjs';
 import Users from '../models/userModel'; 
 export default async function handler(req, res) {
@@ -12,7 +11,7 @@ export default async function handler(req, res) {
 
     const salt = await bcrypt.genSalt(10); 
     const hashpass = await bcrypt.hash(body.password, salt);
-    const user = new Users({email: body.email, password: hashpass}); 
+    const user = new Users({name: body.username , email: body.email, password: hashpass}); 
     await user.save(); 
     res.status(200).json({message: "Register Success"})
 
