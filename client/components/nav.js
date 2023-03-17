@@ -44,6 +44,11 @@ export default function Navbar() {
                                     <a className="nav-link">เข้าสู่ระบบ</a>
                                 </Link>
                             </li>
+                            <li className="nav-item">
+                                <Link href="/admin/dashboard">
+                                    <a className="nav-link">จัดการข้อมูล</a>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

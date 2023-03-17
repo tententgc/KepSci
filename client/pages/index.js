@@ -12,24 +12,24 @@ export default function Home() {
       <Navbar />
       <div className={styles.Banner}>
         <div className='py-32 px-3'>
-          <p className='text-center mb-3 text-white text-3xl md:text-4xl font-semibold'>ฐานข้อมูลงานวิจัย และวิทยานิพนธ์</p>
+          <p className='text-center mb-3 text-white text-3xl md:text-4xl font-semibold'>ฐานข้อมูลงานโครงงาน</p>
           <p className='text-center text-xl text-white'>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
         </div>
       </div>
       <div className="main py-10 px-4 lg:pt-16">
         <div className="md:container md:mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-4 gap-y-4 md:gap-x-4">
-            <div class="list">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-y-4 md:gap-x-4">
+            <div className="list">
               <Link href="/search">
                 <a>
-                  <div class="flex bg-white justify-center items-center p-3 rounded-lg drop-shadow-md hover:bg-neutral-100 duration-200">
+                  <div className="flex bg-white justify-center items-center p-3 rounded-lg drop-shadow-md hover:bg-neutral-100 duration-200">
                     <FontAwesomeIcon icon={faMagnifyingGlass} className="mr-3"/> 
-                    ค้นหางานวิจัยและวิทยานิพนธ์
+                    ค้นหาข้อมูลงานโครงงาน
                   </div>
                 </a>
               </Link>
             </div>
-            <div class="sm:col-span-3">
+            <div className="sm:col-span-3">
               
             </div>
           </div>

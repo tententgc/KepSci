@@ -17,12 +17,12 @@ export default function Home() {
                     <span className="block font-medium text-slate-700">รายชื่อผู้จัดทำโครงงาน</span>
                     <input type="text" className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm" />
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-4">
         
 
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                         <span className="block font-medium text-slate-700">ประเภทของโครงงาน</span>
-                        <select class="form-select appearance-none
+                        <select className="form-select appearance-none
                         block
                         w-full
                         px-3
@@ -45,9 +45,9 @@ export default function Home() {
                     </div>
 
 
-                    <div class="input-group mb-3">
+                    <div className="input-group mb-3">
                         <span className="block font-medium text-slate-700">ปีที่เผยแพร่</span>
-                        <select class="form-select appearance-none
+                        <select className="form-select appearance-none
                         block
                         w-full
                         px-3
